@@ -28,8 +28,6 @@ results/benchmark.csv
 results/plots/*.png
 results/plots/*.pdf
 
-# ── Informe (generado externamente) ─────────────────────────────────────────
-report/*.pdf
 
 # ── IDEs ─────────────────────────────────────────────────────────────────────
 .vscode/
