@@ -1,0 +1,29 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Dependencias Python — MetaScore HPC
+#
+# Instalación:
+#   pip install -r requirements.txt
+#
+# Notas:
+#   · pycuda solo es necesario para el Nivel 3 (CUDA) en Google Colab.
+#     No instalarlo localmente si la GPU es AMD o no hay GPU NVIDIA.
+#   · multiprocessing, pathlib, argparse, time, os, sys y csv
+#     son módulos de la biblioteca estándar de Python — no se instalan.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Cómputo numérico ─────────────────────────────────────────────────────────
+# Usada en: generate_data.py, sequential.py, multicore.py, scoring_pycuda.py
+numpy>=1.24
+
+# ── Métricas de clasificación ────────────────────────────────────────────────
+# Usada en: sequential.py, multicore.py  (roc_auc_score)
+scikit-learn>=1.2
+
+# ── Visualización ────────────────────────────────────────────────────────────
+# Usada en: Colab notebook (gráficas de scores y speedup)
+matplotlib>=3.7
+
+# ── Aceleración GPU — SOLO Google Colab (requiere GPU NVIDIA) ────────────────
+# Usada en: scoring_pycuda.py, MetaScore_HPC_Nivel3_Colab.ipynb
+# Descomentar solo si se ejecuta en un entorno con GPU NVIDIA y CUDA Toolkit.
+# pycuda>=2022.1

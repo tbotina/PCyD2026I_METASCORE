@@ -1,0 +1,55 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# ── Datos generados (reproducibles con generate_data.py) ────────────────────
+data/*.npy
+data/*.bin
+data/metadata.txt
+
+# ── Binarios C / CUDA ────────────────────────────────────────────────────────
+C_OpenMP_MPI/scoring_openmp
+C_OpenMP_MPI/scoring_mpi
+C_OpenMP_MPI/*.o
+CUDA/scoring_cuda
+CUDA/*.o
+
+# ── Resultados y gráficas (generados por run_all.sh) ────────────────────────
+results/benchmark.csv
+results/plots/*.png
+results/plots/*.pdf
+
+# ── Informe (generado externamente) ─────────────────────────────────────────
+report/*.pdf
+
+# ── IDEs ─────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Documentación y enunciado ────────────────────────────────────────────────
+docs/
+
+# ── Informe técnico (archivos generados localmente) ──────────────────────────
+report/gen_mpi_diagram.py
+report/md_to_docx.py
+report/informe_tecnico.md
+report/informe_tecnico.docx
+report/mpi_protocol.png
+
+# ── Archivos de trabajo temporal ─────────────────────────────────────────────
+ignorar.md
+resultados_c.txt
+
